@@ -1,0 +1,246 @@
+
+/*================CSS RESET===================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*===============Basic Style====================*/
+body
+{
+ color: #fff
+ font-family: "Helvetica Nue",Arial,sans-serif;
+ font-size: 15px;
+ line-height: 1.4;
+}
+
+
+.page-header
+{
+	background-color: rgba(0,0,0,0.8);
+	height: 67px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.page-header .logo{
+	float: left;
+	margin-top: 25px;
+}
+.page-header .main-nav{
+	margin-top: 25px;
+	float: right;
+
+}
+.wrapper
+{
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+
+}
+.main-nav li
+{
+	float: left;
+	margin-left: 90px;
+}
+.main-nav li a
+{
+	color: #fff	;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+/*========================BANNERS=======================*/
+.banners
+{
+ height: 612px;
+ background: url(../images/banner.png);
+ background-size: cover;
+ padding-top: 240px;
+ box-sizing: border-box;
+}
+.banner-block{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+
+
+}
+.Subtitle{
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin:  25px 0;
+}
+.learn_button
+{
+	padding: 20px 32px ;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	background-color: #ca0500;
+	width: 165px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	 
+}
+
+/*==============ARTICLES STYLE===================================*/
+.articles
+{
+background: #f7f7f7; /* Old browsers */
+background: -moz-linear-gradient(170deg, #f7f7f7 0%, #f2f2f2 20%, #f2efed 40%, #f2efed 48%, #595959 50%, #2c2c2c 50%, #000000 51%, #111111 60%, #141414 75%, #1c1c1c 91%, #1c1c1c 98%, #2b2b2b 100%, #131313 100%, #2b2b2b 101%); /* FF3.6-15 */
+background: -webkit-linear-gradient(170deg, #f7f7f7 0%,#f2f2f2 20%,#f2efed 40%,#f2efed 48%,#595959 50%,#2c2c2c 50%,#000000 51%,#111111 60%,#141414 75%,#1c1c1c 91%,#1c1c1c 98%,#2b2b2b 100%,#131313 100%,#2b2b2b 101%); /* Chrome10-25,Safari5.1-6 */
+}
+.articles>.wrapper::after ,.page-footer>.wrapper::after {
+	content: '.';
+	font-size: 0;
+	height: 0;
+	width: 100%;
+	display: block;
+	clear: both;
+}
+article
+{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+article:first-of-type{
+ padding-right: 65px;
+ color: #fff;
+ padding-top: 65px;
+ padding-bottom: 75px;
+}
+h2
+{
+	font-weight: 300;
+	font-size: 32px;
+	padding-bottom: 50px;
+}
+h2::after
+{
+	content: '.';
+	font-size: 0;
+	height: 2px;
+	width: 32px;
+	background: #ca0500;
+	display: block;
+}
+article:last-of-type{
+ padding-left: 65px;
+  padding-top: 65px;
+ padding-bottom: 75px;
+}
+.quotes
+{
+	font-size: 22px;
+	font-style: italic;
+}
+.text{
+	padding-top: 20px;
+	font-weight: 300;
+}
+
+/*==============Footer Style==================================*/
+.page-footer
+{
+	background: black;
+	color: #fff;
+	box-sizing: border-box;
+}
+.footer-col
+{
+	width: 25%;
+	float: left;
+	padding-top: 20px;
+}
+.page-footer h3
+{
+	font-size: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+
+}
+.page-footer h3::after
+{
+	content: '.';
+	font-size: 0;
+	display: block;
+	height: 2px;
+	width: 188px;
+	background-color: #292929;
+}
+.page-footer li{
+	color: #999;
+    line-height: 1.6;
+}
+.page-footer li:hover{
+	background-color: #fff;
+	cursor: pointer;
+}
+.social a{
+	display: block;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	background-color: #000;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+	
+	
+}
+.social a:hover
+{
+	background-color: #fff;
+}
+.social li
+{
+	display: inline-block;
+}
